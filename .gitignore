@@ -1,12 +1,42 @@
-#Ignore everything
+### Eclipse ###
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
 
-*
+# External tool builders
+.externalToolBuilders/
 
+# Locally stored "Eclipse launch configurations"
+*.launch
 
-#But don't ignore important things
-!src/*
-!gradle/wrapper
-!.gitignore
-!build.gradle
-!gradlew*
-!setup.bat
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# TeXlipse plugin
+.texlipse
+
+### Eclipse Patch ###
+.classpath
+.project
+
+### Windows ###
+*.lnk
+Thumbs.db
+
+### Linux ###
+*~
