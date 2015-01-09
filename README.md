@@ -31,7 +31,7 @@ If you decide to contribute your changes to this repository, you should also add
 bash gradlew javadoc
 ```
 
-# IF YOU ARE EXPERIENCING ISSUES WITH ECLIPSE/IDEA
+# If you are experiencing issues with Eclipse/IDEA
 
 Run the following command(s):
 ```
