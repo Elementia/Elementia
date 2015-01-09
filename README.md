@@ -50,6 +50,8 @@ Run the following command(s):
 	bash gradlew cleanIdea
 ```
 
+Then go back to step one
+
 You can take a look at other Gradle commands if you are curious by running the "tasks" command:
 ```
 # Windows
