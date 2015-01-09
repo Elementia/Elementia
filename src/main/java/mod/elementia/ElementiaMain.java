@@ -15,7 +15,9 @@ public class ElementiaMain {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		// TODO load config
-		// TODO create creative tab
+
+		
+		
 		// TODO register items/blocks
 		
 		CraftingManager.start();

@@ -47,3 +47,9 @@ build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
+
+### Minecraft ###
+eclipse/logs/*
+eclipse/options.txt
+eclipse/saves/*
+eclipse/usernamecache.json
