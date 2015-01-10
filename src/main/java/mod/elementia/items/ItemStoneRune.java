@@ -13,7 +13,7 @@ public class ItemStoneRune extends ElementiaItem {
 
 	@Override
 	public String getRawUnlocalizedName() {
-		return "stoneRune";
+		return "stoneRune0";
 	}
 
 	@Override
@@ -31,5 +31,14 @@ public class ItemStoneRune extends ElementiaItem {
 		
 		return stack;
 		
+	}
+	
+	@Override
+	public Recipe getRecipe() {
+		return new Recipe(new ItemStack(this, 1), new Object[] {
+			"C ",
+			" C",
+			'C', Blocks.cobblestone;
+		});
 	}
 }

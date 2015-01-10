@@ -18,7 +18,7 @@ public class ItemInscriber extends ElementiaItem {
 
 	@Override
 	public String getRawUnlocalizedName() {
-		return "inscriber";
+		return "stoneElementiaInscriber";
 	}
 	
 	@Override
@@ -29,11 +29,12 @@ public class ItemInscriber extends ElementiaItem {
 	@Override
 	public Recipe getRecipe() {
 		return new Recipe(new ItemStack(this, 1), new Object[] {
-			" I ",
-			" S ",
-			" S ",
-			'I', Blocks.iron_block,
-			'S', Items.stick
+			"  C",
+			" T ",
+			"S ",
+			'S', Items.stick,
+			'T', Items.string,
+			'C', Blocks.cobblestone;
 		});
 	}
 }
