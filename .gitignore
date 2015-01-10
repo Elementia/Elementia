@@ -52,4 +52,6 @@ gradle-app.setting
 eclipse/logs/*
 eclipse/options.txt
 eclipse/saves/*
+eclipse/crash-reports/*
+eclipse/asm/*
 eclipse/usernamecache.json

@@ -14,7 +14,7 @@ public class CreativeTabElementia extends CreativeTabs {
 
 	@Override
 	public Item getTabIconItem() {
-		return ItemInscriber.inscriberInstance;
+		return ItemInscriber.getInstance(ItemInscriber.class);
 	}
 
 }

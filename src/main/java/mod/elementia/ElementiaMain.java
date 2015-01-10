@@ -20,7 +20,7 @@ public class ElementiaMain {
 		
 		// TODO register items/blocks
 		
-		CraftingManager.start();
+		CraftingManager.register();
 	}
 
 }
