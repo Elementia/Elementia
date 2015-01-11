@@ -15,11 +15,6 @@ public class ItemStoneRune extends ElementiaItem {
 	public String getRawUnlocalizedName() {
 		return "stoneRune0";
 	}
-
-	@Override
-	public Recipe getRecipe() {
-		return null;
-	}
 	
 	@Override
 	public ItemStack onItemRightClick(ItemStack stack, World world,
@@ -38,7 +33,7 @@ public class ItemStoneRune extends ElementiaItem {
 		return new Recipe(new ItemStack(this, 1), new Object[] {
 			"C ",
 			" C",
-			'C', Blocks.cobblestone;
+			'C', Blocks.cobblestone
 		});
 	}
 }
