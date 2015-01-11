@@ -8,6 +8,7 @@
     "updateUrl": "",
     "authorList": [ "AliquotMesozoic", "griseouslight", "JayCee235" ],
     "credits": "Thanks to AliquotMesozoic, griseouslight, and JayCee235 for putting so much effort into this mod!",
-    "logoFile": "/mod_IronChest.logo.png",
-    "screenshots": [  ],
+    "logoFile": "",
+    "screenshots": [],
+    "useDependencyInformation": true
 }]
