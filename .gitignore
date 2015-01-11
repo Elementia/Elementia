@@ -57,3 +57,4 @@ eclipse/usernamecache.json
 /Elementia.iws
 /Elementia.iml
 /Elementia.ipr
+*.DS_Store
