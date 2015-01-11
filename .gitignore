@@ -42,7 +42,6 @@ Thumbs.db
 *~
 
 ### Gradle ###
-.gradle
 build/
 
 # Ignore Gradle GUI config
@@ -55,3 +54,6 @@ eclipse/saves/*
 eclipse/crash-reports/*
 eclipse/asm/*
 eclipse/usernamecache.json
+/Elementia.iws
+/Elementia.iml
+/Elementia.ipr
