@@ -34,7 +34,7 @@ public class ItemInscriber extends ElementiaItem {
 			"S ",
 			'S', Items.stick,
 			'T', Items.string,
-			'C', Blocks.cobblestone;
+			'C', Blocks.cobblestone
 		});
 	}
 }
