@@ -12,6 +12,14 @@ local.properties
 .settings/
 .loadpath
 
+### IDEs ###
+eclipse/*
+.idea/*
+
+### Eclipse Patch ###
+.classpath
+.project
+
 # External tool builders
 .externalToolBuilders/
 
@@ -30,10 +38,6 @@ local.properties
 # TeXlipse plugin
 .texlipse
 
-### Eclipse Patch ###
-.classpath
-.project
-
 ### Windows ###
 *.lnk
 Thumbs.db
@@ -47,14 +51,6 @@ build/
 # Ignore Gradle GUI config
 gradle-app.setting
 
-### Minecraft ###
-eclipse/logs/*
-eclipse/options.txt
-eclipse/saves/*
-eclipse/crash-reports/*
-eclipse/asm/*
-eclipse/usernamecache.json
-/Elementia.iws
-/Elementia.iml
-/Elementia.ipr
+### Mac ###
+
 *.DS_Store
