@@ -1,4 +1,4 @@
-package com.elementia.mod;
+package com.elementia.elementiajmt;
 
 
 import cpw.mods.fml.common.Mod;
@@ -10,9 +10,12 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Elementia.MOD_ID, name = Elementia.MOD_NAME, version = Elementia.MOD_VERSION)
 public class Elementia {
 
-    public static final String MOD_ID = "ELementiaMod";
+    public static final String MOD_ID = "elementiajmt";
     public static final String MOD_NAME = "Elementia";
     public static final String MOD_VERSION = "1.7.10-1.0";
+
+    @Mod.Instance(MOD_ID)
+    public static Elementia instance;
 
 
     @Mod.EventHandler

@@ -18,7 +18,7 @@ buildscript {
 apply plugin: 'forge'
 
 version = "1.7.10-1.0"
-group= "com.elementia.mod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group= "com.elementia.elementiajmt" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Elementia"
 
 minecraft {
@@ -33,7 +33,7 @@ dependencies {
     //compile "some.group:artifact:version"
       
     // real examples
-    //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
+    //compile 'com.elementiajmt-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
     //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
 
     // for more info...
