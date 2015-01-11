@@ -1,0 +1,13 @@
+[{
+    "modid": "elementiajmt",
+    "name": "Elementia",
+    "description": "A solitary figure stands in the center of a clearing, holding across his chest a staff of gnarled oak. A dark cowl hides the man's features, giving him an eldritch aura - something almost sinister. You can't help but shiver. There's something... elemental in the air.",
+    "version": "1.7.10-1.0",
+    "mcversion": "1.7.10",
+    "url": "https://github.com/Elementia/Elementia-Wiki/wiki",
+    "updateUrl": "",
+    "authorList": [ "AliquotMesozoic", "griseouslight", "JayCee235" ],
+    "credits": "Thanks to AliquotMesozoic, griseouslight, and JayCee235 for putting so much effort into this mod!",
+    "logoFile": "/mod_IronChest.logo.png",
+    "screenshots": [  ],
+}]
