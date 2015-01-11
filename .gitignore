@@ -12,6 +12,11 @@ local.properties
 .settings/
 .loadpath
 
+### Idea ###
+*.iml
+*.ipr
+*.iws
+
 ### IDEs ###
 eclipse/*
 .idea/*
