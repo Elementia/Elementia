@@ -1,15 +1,15 @@
-package mod.elementia.items.armor;
+package com.elementia.elementiajmt.items.armor;
 
 import java.util.List;
-import static mod.elementia.util.NBTUtils.*;
 
-import mod.elementia.misc.CreativeTabElementia;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
+
+import static com.elementia.elementiajmt.util.NBTUtils.*;
 
 public class DoubleJumpBoots extends ItemArmor {
 	/** The amount of jumps you have. Probably won't change. Maybe. */
@@ -19,7 +19,7 @@ public class DoubleJumpBoots extends ItemArmor {
 		super(ItemArmor.ArmorMaterial.DIAMOND, 0, 3);// locks it to the feet
 		setMaxDamage(1000);// ... I don't really know
 		this.setUnlocalizedName("doubleJumpBoots");
-		this.setCreativeTab(CreativeTabElementia.tabInstance);
+		//this.setCreativeTab(CreativeTabElementia.tabInstance);
 		// TODO textures
 	}
 

@@ -1,4 +1,4 @@
-package mod.elementia.util;
+package com.elementia.elementiajmt.util;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
