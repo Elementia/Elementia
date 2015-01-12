@@ -17,7 +17,7 @@ public class ElementiaGuiFactory implements IModGuiFactory {
 
     @Override
     public Class<? extends GuiScreen> mainConfigGuiClass() {
-        return null;
+        return ElementiaGuiConfig.class;
     }
 
     @Override

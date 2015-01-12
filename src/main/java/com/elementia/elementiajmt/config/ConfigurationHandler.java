@@ -2,6 +2,7 @@ package com.elementia.elementiajmt.config;
 
 import com.elementia.elementiajmt.reference.ErrorReference;
 import com.elementia.elementiajmt.reference.Reference;
+import com.elementia.elementiajmt.util.LogHelper;
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.common.config.Configuration;
@@ -16,8 +17,9 @@ public class ConfigurationHandler
     public static Configuration configuration;
 
     public static void init(File configFile) {
+        LogHelper.info("Loading config");
         if (configuration == null) {
-            Configuration configuration = new Configuration(configFile);
+            configuration = new Configuration(configFile);
         }
 
 
@@ -25,15 +27,14 @@ public class ConfigurationHandler
     }
 
     public static void loadConfiguration() {
-        try {
-            configuration.load();
-        } catch(Exception e) {
-            System.err.println(ErrorReference.CONFIGURATION_LOAD_ERR);
-            e.printStackTrace();
-        } finally {
-            if (configuration.hasChanged()) {
-                configuration.save();
-            }
+        // Load in our configuration
+
+        // Temporary test for visual config
+        boolean someValue = configuration.get(Configuration.CATEGORY_GENERAL, "someValue", true, "Just a test - remove later").getBoolean(true);
+
+        if (configuration.hasChanged()) {
+            LogHelper.info("Reloading configuration");
+            configuration.save();
         }
     }
 
