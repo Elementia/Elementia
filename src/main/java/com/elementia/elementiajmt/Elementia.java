@@ -4,6 +4,7 @@ package com.elementia.elementiajmt;
 import com.elementia.elementiajmt.config.ConfigurationHandler;
 import com.elementia.elementiajmt.proxy.IProxy;
 import com.elementia.elementiajmt.util.LogHelper;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -27,6 +28,8 @@ public class Elementia {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        // Register our configuration handler to the FML event bus
+        FMLCommonHandler.instance().bus().register(ConfigurationHandler.class);
 
         //TODO Load network handling
         //TODO Load items

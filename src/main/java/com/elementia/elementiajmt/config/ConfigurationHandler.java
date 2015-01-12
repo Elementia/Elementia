@@ -20,13 +20,11 @@ public class ConfigurationHandler
         LogHelper.info("Loading config");
         if (configuration == null) {
             configuration = new Configuration(configFile);
+            loadConfiguration();
         }
-
-
-        loadConfiguration();
     }
 
-    public static void loadConfiguration() {
+    private static void loadConfiguration() {
         // Load in our configuration
 
         // Temporary test for visual config
