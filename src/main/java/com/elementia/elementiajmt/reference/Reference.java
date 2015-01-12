@@ -18,6 +18,5 @@ public class Reference {
     public static final String CLIENT_SIDE_PROXY = "com.elementia.elementiajmt.proxy.ClientProxy";
     public static final String SERVER_SIDE_PROXY = "com.elementia.elementiajmt.proxy.ServerProxy";
 
-
-
+    public static final String GUI_FACTORY_CLASS = "com.elementia.elementiajmt.client.gui.ElementiaGuiFactory";
 }

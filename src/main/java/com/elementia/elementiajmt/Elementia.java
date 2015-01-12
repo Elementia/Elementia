@@ -1,6 +1,7 @@
 package com.elementia.elementiajmt;
 
 
+import com.elementia.elementiajmt.config.ConfigurationHandler;
 import com.elementia.elementiajmt.proxy.IProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -13,7 +14,7 @@ import static com.elementia.elementiajmt.reference.Reference.*;
 /**
  * Created by AliquotMesozoic on 1/11/15 at 2:33 AM.
  */
-@Mod(modid = MOD_ID, name = MOD_NAME, version = MOD_VERSION)
+@Mod(modid = MOD_ID, name = MOD_NAME, version = MOD_VERSION, guiFactory = GUI_FACTORY_CLASS)
 public class Elementia {
 
     @Mod.Instance(MOD_ID)
@@ -24,8 +25,9 @@ public class Elementia {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+
         //TODO Load network handling
-        //TODO Load config
         //TODO Load items
         //TODO Load blocks
     }
