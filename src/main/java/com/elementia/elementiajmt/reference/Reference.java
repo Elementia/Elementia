@@ -12,7 +12,7 @@ public class Reference {
     // The human-readable name for our mod
     public static final String MOD_NAME = "Elementia";
 
-    public static final String MOD_VERSION = "1.7.10-1.0";
+    public static final String MOD_VERSION = "@VERSION@";
 
     // The path to our proxies
     public static final String CLIENT_SIDE_PROXY = "com.elementia.elementiajmt.proxy.ClientProxy";
