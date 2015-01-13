@@ -1,5 +1,7 @@
 package com.elementia.elementiajmt.registry;
 
+import net.minecraft.item.ItemStack;
+
 import java.util.ArrayList;
 
 /**
@@ -7,13 +9,23 @@ import java.util.ArrayList;
  */
 public class ElementialRecipe {
 
-    private ArrayList<Object[]> recipes = new ArrayList<Object[]>();
+    private ArrayList<Recipe> recipes = new ArrayList<Recipe>();
 
-    public void addRecipe(Object[] recipe) {
-        this.recipes.add(recipe);
+    public void addRecipe(ItemStack itemStack, Object[] recipe) {
+        this.recipes.add(new Recipe(recipe, itemStack));
     }
 
-    public ArrayList<Object[]> getRecipes() {
+    public ArrayList<Recipe> getRecipes() {
         return this.recipes;
+    }
+
+    protected class Recipe {
+        public Object[] recipe;
+        public ItemStack itemStack;
+
+        public Recipe(Object[] recipe, ItemStack itemStack) {
+            this.recipe = recipe;
+            this.itemStack = itemStack;
+        }
     }
 }
