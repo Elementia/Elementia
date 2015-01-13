@@ -7,7 +7,7 @@ import java.util.ArrayList;
 /**
  * Created by AliquotMesozoic on 1/12/15 at 5:11 PM.
  */
-public class ElementialRecipe {
+public class ElementiaRecipe {
 
     private ArrayList<Recipe> recipes = new ArrayList<Recipe>();
 

@@ -2,11 +2,12 @@ package com.elementia.elementiajmt.items.armor;
 
 import java.util.List;
 
-import com.elementia.elementiajmt.registry.IElementialItem;
-import com.elementia.elementiajmt.registry.ElementialRecipe;
+import com.elementia.elementiajmt.registry.IElementiaItem;
+import com.elementia.elementiajmt.registry.ElementiaRecipe;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -14,14 +15,16 @@ import net.minecraft.world.World;
 
 import static com.elementia.elementiajmt.util.NBTUtils.*;
 
-public class DoubleJumpBoots extends ItemArmor implements IElementialItem {
+public class DoubleJumpBoots extends ItemArmor implements IElementiaItem {
 	/** The amount of jumps you have. Probably won't change. Maybe. */
 	private static byte jumpAmount = 1;
 
-	public DoubleJumpBoots(int armorSlot) {
+	public static DoubleJumpBoots instance = new DoubleJumpBoots();
+
+	public DoubleJumpBoots() {
 		super(ItemArmor.ArmorMaterial.DIAMOND, 0, 3);// locks it to the feet
 		setMaxDamage(1000);// ... I don't really know
-		//this.setCreativeTab(CreativeTabElementia.tabInstance);
+		//this.setCreativeTab(CreativeTabElementia.tabInstance)
 		// TODO textures
 	}
 
@@ -94,21 +97,28 @@ public class DoubleJumpBoots extends ItemArmor implements IElementialItem {
 	}
 
 	@Override
+	public Item getInstance() {
+		return DoubleJumpBoots.instance;
+	}
+
+	@Override
 	public String getRawName() {
 		return "doubleJumpBoots";
 	}
 
 	@Override
-	public ElementialRecipe getRecipes() {
-		ElementialRecipe helper = new ElementialRecipe();
-		helper.addRecipe(new Object[] {
+	public ElementiaRecipe getRecipeHandler() {
+		ElementiaRecipe recipe = new ElementiaRecipe();
+		ItemStack stack = new ItemStack(this, 1);
+
+		recipe.addRecipe(new ItemStack(this, 1), new Object[] {
 				"F F",
 				"I I",
 				"I I",
 				'F', Items.feather,
 				'I', Items.iron_ingot
-		}, this);
+		});
 
-		return helper;
+		return recipe;
 	}
 }

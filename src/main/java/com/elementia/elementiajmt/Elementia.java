@@ -3,6 +3,7 @@ package com.elementia.elementiajmt;
 
 import com.elementia.elementiajmt.config.ConfigurationHandler;
 import com.elementia.elementiajmt.proxy.IProxy;
+import com.elementia.elementiajmt.registry.ElementiaRegister;
 import com.elementia.elementiajmt.util.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
@@ -32,12 +33,14 @@ public class Elementia {
         FMLCommonHandler.instance().bus().register(ConfigurationHandler.class);
 
         //TODO Load network handling
-        //TODO Load items
-        //TODO Load blocks
+
+        ElementiaRegister.preInit(); // Registers items and blocks
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+
+        ElementiaRegister.init(); // Registers everything else
         //TODO Register GUI
         //TODO Register Tile Entities
         //TODO Register Crafting recipes
