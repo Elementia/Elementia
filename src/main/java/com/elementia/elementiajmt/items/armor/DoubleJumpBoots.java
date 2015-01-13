@@ -2,8 +2,11 @@ package com.elementia.elementiajmt.items.armor;
 
 import java.util.List;
 
+import com.elementia.elementiajmt.items.IElementiaItem;
+import com.elementia.elementiajmt.util.RecipesHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -11,14 +14,13 @@ import net.minecraft.world.World;
 
 import static com.elementia.elementiajmt.util.NBTUtils.*;
 
-public class DoubleJumpBoots extends ItemArmor {
+public class DoubleJumpBoots extends ItemArmor implements IElementiaItem {
 	/** The amount of jumps you have. Probably won't change. Maybe. */
 	private static byte jumpAmount = 1;
 
 	public DoubleJumpBoots(int armorSlot) {
 		super(ItemArmor.ArmorMaterial.DIAMOND, 0, 3);// locks it to the feet
 		setMaxDamage(1000);// ... I don't really know
-		this.setUnlocalizedName("doubleJumpBoots");
 		//this.setCreativeTab(CreativeTabElementia.tabInstance);
 		// TODO textures
 	}
@@ -91,4 +93,22 @@ public class DoubleJumpBoots extends ItemArmor {
 		return false;
 	}
 
+	@Override
+	public String getRawName() {
+		return "doubleJumpBoots";
+	}
+
+	@Override
+	public RecipesHelper getRecipes() {
+		RecipesHelper helper = new RecipesHelper();
+		helper.addRecipe(new Object[] {
+				"F F",
+				"I I",
+				"I I",
+				'F', Items.feather,
+				'I', Items.iron_ingot
+		}, this);
+
+		return helper;
+	}
 }
