@@ -2,8 +2,8 @@ package com.elementia.elementiajmt.items.armor;
 
 import java.util.List;
 
-import com.elementia.elementiajmt.items.IElementiaItem;
-import com.elementia.elementiajmt.util.RecipesHelper;
+import com.elementia.elementiajmt.registry.IElementialItem;
+import com.elementia.elementiajmt.registry.ElementialRecipe;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 
 import static com.elementia.elementiajmt.util.NBTUtils.*;
 
-public class DoubleJumpBoots extends ItemArmor implements IElementiaItem {
+public class DoubleJumpBoots extends ItemArmor implements IElementialItem {
 	/** The amount of jumps you have. Probably won't change. Maybe. */
 	private static byte jumpAmount = 1;
 
@@ -99,8 +99,8 @@ public class DoubleJumpBoots extends ItemArmor implements IElementiaItem {
 	}
 
 	@Override
-	public RecipesHelper getRecipes() {
-		RecipesHelper helper = new RecipesHelper();
+	public ElementialRecipe getRecipes() {
+		ElementialRecipe helper = new ElementialRecipe();
 		helper.addRecipe(new Object[] {
 				"F F",
 				"I I",
